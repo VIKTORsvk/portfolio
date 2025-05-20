@@ -103,14 +103,23 @@
           <div class="carousel">
             <button class="carousel__btn carousel__btn--prev">&#10094;</button>
             <div class="carousel__images">
-              <img src="./assets/jpeg/IronLineScreenshot.jpg" class="carousel__img active" />
+              <div class="carousel__img active">
+                <div class="carousel__video-wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/piEp79EjHFY"
+                    title="Iron Line Trailer"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
               <img src="./assets/jpeg/IronLineScreenshot1.jpg" class="carousel__img" />
               <img src="./assets/jpeg/IronLineScreenshot2.jpg" class="carousel__img" />
               <img src="./assets/jpeg/IronLineScreenshot3.png" class="carousel__img" />
             </div>
             <button class="carousel__btn carousel__btn--next">&#10095;</button>
           </div>
-
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
@@ -229,30 +238,31 @@
         </div>
       </div>
     </footer>
-        <script>
-      const images = document.querySelectorAll('.carousel__img');
-      const prevBtn = document.querySelector('.carousel__btn--prev');
-      const nextBtn = document.querySelector('.carousel__btn--next');
-      let currentIndex = 0;
-    
-      function showImage(index) {
-        images.forEach((img, i) => {
-          img.classList.toggle('active', i === index);
+      <script>
+        const slides = document.querySelectorAll('.carousel__img');
+        const prevBtn = document.querySelector('.carousel__btn--prev');
+        const nextBtn = document.querySelector('.carousel__btn--next');
+        let currentIndex = 0;
+      
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+          });
+        }
+      
+        prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
         });
-      }
-    
-      prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(currentIndex);
-      });
-    
-      nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % images.length;
-        showImage(currentIndex);
-      });
-    
-      showImage(currentIndex);
-    </script>
+      
+        nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        });
+      
+        showSlide(currentIndex);
+      </script>
+
 
     <script src="./index.js"></script>
   </body>
