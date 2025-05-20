@@ -702,3 +702,46 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 6rem;
+}
+
+.carousel__images {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel__img {
+  min-width: 100%;
+  display: none;
+}
+
+.carousel__img.active {
+  display: block;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel__btn--prev {
+  left: 10px;
+}
+
+.carousel__btn--next {
+  right: 10px;
+}
