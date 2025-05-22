@@ -185,14 +185,16 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: url(../assets/jpeg/project-mockup-example.jpeg) center center / cover no-repeat;
-  padding: 10rem 0;
+  background: url('../assets/jpeg/your-image.jpg') center center / cover no-repeat;
+  height: 80vh; /* Set fixed section height */
+  min-height: 50rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 
   @media only screen and (max-width: 37.5em) {
     .home-hero {
