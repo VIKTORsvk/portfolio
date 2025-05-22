@@ -183,16 +183,15 @@ textarea {
 .d-none {
   display: none; }
 
+
 .home-hero {
   color: #fff;
-  background: url('../assets/jpeg/your-image.jpg') center center / cover no-repeat;
-  height: 80vh; /* Set fixed section height */
-  min-height: 50rem;
+  background: url('../assets/jpeg/your-image.jpg')
+  background-position: center;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 
