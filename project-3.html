@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 3</title>
+    <title>Iron Line</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -17,114 +17,83 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">John Doe</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
+<header class="header">
+  <div class="header__content">
+    <div class="header__logo-container">
+      <div class="header__logo-img-cont">
+        <img
+          src="./assets/png/viktor.jpg"
+          alt="Viktor Adamec Logo Image"
+          class="header__logo-img"
+        />
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
+      <span class="header__logo-sub">Viktor Adamec</span>
+    </div>
+    <div class="header__main">
+      <ul class="header__links">
+      </ul>
+      <div class="header__main-ham-menu-cont">
+        <img
+          src="./assets/svg/ham-menu.svg"
+          alt="hamburger menu"
+          class="header__main-ham-menu"
+        />
+        <img
+          src="./assets/svg/ham-menu-close.svg"
+          alt="hamburger menu close"
+          class="header__main-ham-menu-close d-none"
+        />
       </div>
-    </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
-          </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
-      </div>
+    </div>
+  </div>
+  <div class="header__sm-menu">
+    <div class="header__sm-menu-content">
+      <ul class="header__sm-menu-links">
+      </ul>
+    </div>
+  </div>
+</header> <!-- ✅ This was missing -->
     </section>
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
+          <div class="carousel">
+            <button class="carousel__btn carousel__btn--prev">&#10094;</button>
+            <div class="carousel__images">
+              <div class="carousel__img active" style="aspect-ratio: 16 / 9;">
+                <div class="carousel__video-wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/piEp79EjHFY"
+                    title="Iron Line Trailer"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <img src="./assets/jpeg/IronLineScreenshot1.jpg" class="carousel__img" />
+              <img src="./assets/jpeg/IronLineScreenshot2.jpg" class="carousel__img" />
+              <img src="./assets/jpeg/IronLineScreenshot3.png" class="carousel__img" />
+            </div>
+            <button class="carousel__btn carousel__btn--next">&#10095;</button>
           </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
+              <h3 class="project-details__content-title">Iron Line</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+Iron Line is a tower defense game where you are one of a few, train conductors capable of traversing on the Iron Line. Will you survive the onslaught, or get an express ticket to the afterlife?
+              </p>
+              <h3 class="project-details__content-title">Contribution / Responsibilities</h3>
+              <p class="project-details__desc-para">
+ I was the Programming Lead on Iron Line, responsible for sprint planning, task distribution,
+                and ensuring smooth integration of game systems through agile processes.
+                I designed and implemented key progression systems, including train station flow,
+                contract selection, and wave spawning. I also contributed to game design, initiating
+                and leading turret upgrade system discussions, and implemented two upgrade tiers for the minigun.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+In addition, I served as the project’s Sound Designer, creating and implementing all in-game sound effects. I tailored each sound for impact and immersion, fine-tuning attenuation and concurrency settings in-engine to ensure the best audio experience for players.
               </p>
             </div>
             <div class="project-details__tools-used">
@@ -145,18 +114,12 @@
               </div>
             </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Play now!</h3>
               <a
-                href="#"
+                href="https://store.steampowered.com/app/2707410/Iron_Line/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
+                >Steam Link</a
               >
             </div>
           </div>
@@ -168,63 +131,54 @@
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
             <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
+              <span>Socials</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/viktor-adamec/">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Viktor Adamec</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Email: viktoradamec222@gmail.com
             </p>
           </div>
         </div>
 
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
       </div>
     </footer>
+      <script>
+        const slides = document.querySelectorAll('.carousel__img');
+        const prevBtn = document.querySelector('.carousel__btn--prev');
+        const nextBtn = document.querySelector('.carousel__btn--next');
+        let currentIndex = 0;
+      
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+          });
+        }
+      
+        prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
+        });
+      
+        nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+        });
+      
+        showSlide(currentIndex);
+      </script>
+
+
     <script src="./index.js"></script>
   </body>
 </html>
