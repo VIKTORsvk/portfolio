@@ -185,12 +185,13 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
-  background-position: center;
-  height: 60vh;
-  min-height: 30rem;
-  max-height: 80rem;
+  background: url(../assets/jpeg/project-mockup-example.jpeg) center center / cover no-repeat;
+  padding: 10rem 0;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
   @media only screen and (max-width: 37.5em) {
